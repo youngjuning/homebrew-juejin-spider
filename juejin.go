@@ -18,7 +18,6 @@ var post = flag.String("post", "6859538537830858759", "文章编号")
 var rootDir = flag.String("root", root, "文件保存的根目录")
 
 func main() {
-	fmt.Println(os.Getenv("JUEJINPATH"))
 	flag.Parse()
 	c := colly.NewCollector(
 		colly.Async(true),
