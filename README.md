@@ -36,10 +36,6 @@ Usage of juejin:
 $ go build juejin.go
 ```
 
-会在当前目录下生成一个叫 juejin 的可执行文件，`./juejin` 是可以执行的，也可以使用`go build -o=/usr/local/bin juejin.go` 或 `go build -o=$GOPATH/bin/ juejin.go` 放到已经注册的系统路径中。
-
-> 黑客是要有追求的，不可能做个玩具出来。而且Go本身就是运行起来不靠任何依赖和环境，我不能要求使用工具的人还得装个go的环境。我第一个想到的就是将我的脚本发到Homebrew，谢天谢地，[使用HomeBrew发布脚本](https://www.jianshu.com/p/e88831aac62a) 详细地讲解了这个过程。
-
 ### 2、将可执行文件打包成 tar.gz 的格式
 
 ```shell
@@ -47,6 +43,8 @@ $ tar zcvf juejin_0.0.1.tar.gz juejin
 ```
 
 ![](https://i.loli.net/2020/08/14/u4ZWeM1UlIqALzH.png)
+
+上传到git，供配方软连接到这个脚本文件。
 
 ### 3、使用 `brew create <git-url>` 创建药方
 
