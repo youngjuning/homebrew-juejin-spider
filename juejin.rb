@@ -4,7 +4,7 @@
 class Juejin < Formula
   desc ""
   homepage ""
-  url "https://github.com/youngjuning/homebrew-juejin-spider/raw/master/juejin_0.0.1.tar.gz"
+  url "https://github.com/youngjuning/homebrew-juejin-spider/raw/master/juejin_0.0.2.tar.gz"
   sha256 "b3f5ae06fa6c0f85e8ffb04e0327d5d52ab16cf500bf72b73758b6d20ef00df4"
   license ""
 
