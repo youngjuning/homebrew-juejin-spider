@@ -1,4 +1,4 @@
-module github.com/youngjuning/juejin
+module github.com/youngjuning/juejin-spider
 
 go 1.14
 
