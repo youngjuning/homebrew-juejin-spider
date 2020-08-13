@@ -14,7 +14,7 @@ import (
 
 var fileName = ""
 var root = os.Getenv("HOME") + "/juejin"
-var post = flag.String("post", "6859538537830858759", "文章编号")
+var post = flag.String("post", "6859784103621820429", "🏆 技术专题第二期 | 我与 Go 的那些事")
 var rootDir = flag.String("root", root, "文件保存的根目录")
 
 func main() {
