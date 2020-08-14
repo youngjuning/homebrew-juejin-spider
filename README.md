@@ -20,6 +20,10 @@ $ brew reinstall juejin
 ## 使用
 
 ```sh
+$ juejin -post 6860522117423857678 -root ~/Desktop
+```
+
+```sh
 $ juejin -h
 Usage of juejin:
   -post string
