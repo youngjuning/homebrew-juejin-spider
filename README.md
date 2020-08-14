@@ -36,6 +36,8 @@ Usage of juejin:
 
 ## 打包并使用Homebrew发布脚本
 
+> 感谢 [使用HomeBrew发布脚本](https://www.jianshu.com/p/e88831aac62a) 这篇文章。
+
 ### 1、打包成可执行文件
 
 ```sh
