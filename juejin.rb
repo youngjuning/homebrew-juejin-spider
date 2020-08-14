@@ -4,8 +4,8 @@
 class Juejin < Formula
   desc ""
   homepage ""
-  url "https://github.com/youngjuning/homebrew-juejin-spider/raw/master/juejin_0.0.2.tar.gz"
-  sha256 "0a2a07138887805d818a82dbd89bb09a91463cafa784ec51db7a88f172bcf928"
+  url "https://github.com/youngjuning/homebrew-juejin-spider/raw/master/juejin_0.1.0.tar.gz"
+  sha256 "2061517d5df891e0f3405dc10fd4fda72869aea0f7f0157bdc08441ffc5a5afb"
   license ""
 
   # depends_on "cmake" => :build
