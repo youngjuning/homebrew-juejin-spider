@@ -12,7 +12,7 @@
 $ brew tap youngjuning/juejin-spider https://github.com/youngjuning/homebrew-juejin-spider.git
 ```
 
-### 安装库
+### 下载脚本
 
 ```sh
 $ brew install youngjuning/juejin-spider/juejin
