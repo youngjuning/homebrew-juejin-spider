@@ -74,7 +74,7 @@ func writeFile(content string) {
 	}
 
 	// 创建文件并写入内容
-	fmt.Println("《" + fileName + "》" + " is download on " + *rootDir)
+	fmt.Println("《" + fileName + "》" + " is downloaded on " + *rootDir)
 	file, _ = os.Create(filePath)
 	n, _ := io.WriteString(file, "## "+fileName+"\n\n"+content)
 	// 关闭文件
