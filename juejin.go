@@ -9,7 +9,6 @@ import (
 	"regexp"
 
 	md "github.com/JohannesKaufmann/html-to-markdown"
-	"github.com/PuerkitoBio/goquery"
 	"github.com/gocolly/colly"
 )
 
@@ -37,7 +36,7 @@ func main() {
 	})
 
 	c.OnHTML(".markdown-body", func(e *colly.HTMLElement) {
-	        reg := regexp.MustCompile(`data-`)
+		reg := regexp.MustCompile(`data-`)
 		html, _ := e.DOM.Html()
 		markdown := convertHTMLToMarkdown(reg.ReplaceAllString(html, ""))
 		writeFile(markdown)
@@ -74,7 +73,7 @@ func writeFile(content string) {
 	}
 
 	// 创建文件并写入内容
-	fmt.Println("《" + fileName + "》" + " is downloaded on " + *rootDir)
+	fmt.Println("《" + fileName + "》" + " is downloaded on " + *rootDir + "/")
 	file, _ = os.Create(filePath)
 	n, _ := io.WriteString(file, "## "+fileName+"\n\n"+content)
 	// 关闭文件
