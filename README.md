@@ -6,12 +6,19 @@
 
 ## 安装
 
+### 下载 Tab
+
 ```sh
-// 在执行这个命令的时候，brew会自动去更新自己的formula仓库，会耗时几分钟。。。
 $ brew tap youngjuning/juejin-spider https://github.com/youngjuning/homebrew-juejin-spider.git
-// 下载、安装 hello 脚本
+```
+
+### 安装库
+
+```sh
 $ brew install youngjuning/juejin-spider/juejin
 ```
+
+> 小技巧： 遇到 `Updating Homebrew...` 就执行 `ctrl-c`，就会变快
 
 ## 升级
 
@@ -54,13 +61,13 @@ $ tar zcvf juejin_0.0.1.tar.gz juejin
 
 上传到git，供配方软连接到这个脚本文件。
 
-### 3、使用 `brew create <git-url>` 创建药方
+### 3、使用 `brew create <git-url> --tab user/repo` 创建药方
 
 ```sh
-$ brew create https://github.com/youngjuning/homebrew-juejin-spider/raw/master/juejin_0.0.1.tar.gz
+$ brew create \
+    https://github.com/youngjuning/homebrew-juejin-spider/raw/master/juejin_0.0.1.tar.gz \
+    --tap youngjuning/homebrew-juejin-spider
 ```
-
-> 注意，这里因为我没有更改brew的镜像源，所以创建成功后文件会出现在`/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/juejin.rb` 我们可以手动将这个 hello.rb 文件剪切到自己的Formula文件夹下`/usr/local/Homebrew/Library/Taps/youngjuning/homebrew-juejin-spider/Formula/juejin.rb`。
 
 我们需要对安装方式做一下调整:
 
