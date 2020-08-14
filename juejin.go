@@ -36,7 +36,9 @@ func main() {
 	})
 
 	c.OnHTML(".markdown-body", func(e *colly.HTMLElement) {
-		markdown := convertHTMLToMarkdown(e.DOM)
+	        reg := regexp.MustCompile(`data-`)
+		html, _ := e.DOM.Html()
+		markdown := convertHTMLToMarkdown(reg.ReplaceAllString(html, ""))
 		writeFile(markdown)
 	})
 
@@ -45,9 +47,9 @@ func main() {
 }
 
 // 将Html转为Markdown
-func convertHTMLToMarkdown(selection *goquery.Selection) string {
+func convertHTMLToMarkdown(html string) string {
 	converter := md.NewConverter("", true, nil)
-	markdown := converter.Convert(selection)
+	markdown, _ := converter.ConvertString(html)
 	return markdown
 }
 
