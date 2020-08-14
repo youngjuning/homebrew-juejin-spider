@@ -16,7 +16,7 @@ $ brew install youngjuning/juejin-spider/juejin
 ## 升级
 
 ```sh
-$ brew reinstall juejin
+$ brew upgrade youngjuning/juejin-spider/juejin
 ```
 
 ## 使用
