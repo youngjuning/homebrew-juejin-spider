@@ -18,8 +18,6 @@ $ brew tap youngjuning/juejin-spider https://github.com/youngjuning/homebrew-jue
 $ brew install youngjuning/juejin-spider/juejin
 ```
 
-> 小技巧： 遇到 `Updating Homebrew...` 就执行 `ctrl+c`，就会变快
-
 ## 升级
 
 ```sh
